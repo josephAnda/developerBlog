@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner h1 {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.tools button {
+	float: right;
+}
