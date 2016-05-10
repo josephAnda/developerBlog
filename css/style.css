@@ -9,6 +9,34 @@ body {
 	text-align: center;
 }
 
-.tools button {
+.tools button, .taskbar button {
 	float: right;
+}
+
+.tools button {
+	background-color: #cccccc;
+}
+
+.addContent input {
+	width:  100%;
+	float: right;
+}
+
+.addContent {
+	background-color: #0080ff;
+	border-radius: 5px;
+}
+
+.nav-pills li a{
+	color: #0080ff;
+
+}
+
+.nav-pills li.active a {
+	background-color: #0080ff;
+}
+
+.main div {
+	background-color: #ebebe0;
+	border-radius: 5px;
 }
