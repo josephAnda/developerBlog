@@ -6,6 +6,7 @@
   		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -14,7 +15,7 @@
 				<div class="col-sm-10 col-sm-offset-1 banner"><h1>(BANNER GOES HERE)</h1></div>
 				<div class="col-sm-1"></div>	
 			</div>
-			<div class="row taskbar">
+			<div class="row" id="taskbar">
 				<div class="col-sm-7 col-sm-offset-1">
 					<ul class="nav nav-pills">
 	  					<li role="presentation" class="active"><a href="#">Menu</a></li>
@@ -23,12 +24,18 @@
 	  					<li role="presentation"><a href="#">Here</a></li>
 					</ul>
 				</div>
-				<div class="col-sm-1">
-					<button type="button" class="btn btn-default" title="Add Story" aria-label="Add Story">
- 						<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-					</button>
-				</div>
+
 			</div>
+			<div class="row">
+				<div class="col-sm-7 col-sm-offset-1" id="phantom">
+					<ul class="nav nav-pills">
+		  				<li role="presentation" class="active"><a href="#">Menu</a></li>
+		  				<li role="presentation"><a href="#">Items</a></li>
+		  				<li role="presentation"><a href="#">Go</a></li>
+		  				<li role="presentation"><a href="#">Here</a></li>
+					</ul>
+				</div>
+			</div> 
 		</div>
 		<div class="container">
 			<div class="row main">
@@ -68,7 +75,7 @@
   						Website: <input type='text' name='website' id='website' /><br />
 
   						Comment:<br />
-  						<textarea name='comment' id='comment' rows="4" cols="50"></textarea><br />
+  						<textarea name='comment' id='comment' rows="4" cols="30"></textarea><br />
 
   						<input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
 
@@ -80,5 +87,7 @@
 				<div class="col-sm-10 col-sm-offset-1"></div>
 			</div>
 		</div>
+		<script src="js/script.js"></script>
 	</body>
+
 </html>

@@ -9,7 +9,20 @@ body {
 	text-align: center;
 }
 
-.tools button, .taskbar button {
+.taskbar-scroll {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+}
+
+#phantom {
+	visibility: hidden;
+	position: fixed;
+	z-index: 1;
+}
+.tools button, #taskbar button {
 	float: right;
 	background-color: #cccccc;
 }
@@ -35,6 +48,7 @@ body {
 .main div {
 	background-color: #ebebe0;
 	border-radius: 10px;
+	position: relative;
 }
 
 div#poll {
