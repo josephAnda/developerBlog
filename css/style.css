@@ -12,13 +12,7 @@ body {
     width:  100%;
 }
 
-#home h1 {
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 25px;
-	margin-top:  0px;
-}
+
 
 div.bars {
 	margin-bottom: 10px;
@@ -81,4 +75,13 @@ div#poll {
 	margin-left: 10px;
 	border-radius: 10px;
 	color: #fff;
+}
+
+#banner {
+	background-color: black !important;
+	color: white !important;
+	text-align: center;
+	padding: 30px;
+	margin-top:  0;
+	margin-bottom: 0;
 }
