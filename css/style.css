@@ -1,27 +1,51 @@
-body {
+body, .bars, #home {
     margin: 0;
     padding: 0;
+    
 }
 
-.banner h1 {
+body { 
+	background-color: #c0c0c0;
+}
+
+.bars, #taskbar, .taskbar-scroll {
+    width:  100%;
+}
+
+#home h1 {
 	background-color: black;
 	color: white;
 	text-align: center;
+	padding: 25px;
+	margin-top:  0px;
 }
 
+div.bars {
+	margin-bottom: 10px;
+}
 .taskbar-scroll {
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	width: 100%;
 	background-color: #fff;
 }
+
+#taskbar, .taskbar-scroll {
+	transition:  background-color .3s ease; 
+}
+
+#fix {
+	margin-left: 97.5px;
+}
+/*  The phantom class beow exists so that when the toolbar is fixed there is no sudden offset */
 
 #phantom {
 	visibility: hidden;
 	position: fixed;
 	z-index: 1;
+	width: 100%;
 }
+
 .tools button, #taskbar button {
 	float: right;
 	background-color: #cccccc;
@@ -30,6 +54,7 @@ body {
 .addContent input {
 	width:  100%;
 	float: right;
+	margin-bottom: 5px;
 }
 
 .addContent {
@@ -55,4 +80,5 @@ div#poll {
 	background-color: #0080ff;
 	margin-left: 10px;
 	border-radius: 10px;
+	color: #fff;
 }
