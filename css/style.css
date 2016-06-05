@@ -12,11 +12,18 @@ body {
     width:  100%;
 }
 
+@media (min-width: 768px) {
+    .navbar-left {
+    	float: right!important;
+	}
+}
 
 
+/*
 div.bars {
 	margin-bottom: 10px;
 }
+*/
 .taskbar-scroll {
 	position: fixed;
 	z-index: 1;
