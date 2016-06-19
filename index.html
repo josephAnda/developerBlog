@@ -54,10 +54,13 @@
 	
 		<div class="container">
 			<div class="row main">
-				<div class="col-sm-8 col-sm-offset-1">
+				<div class="col-sm-8">
 					<h1>Front-End Developer Digest</h1>
 					<p>This is a page where developers can express their thoughts or ideas about various topics ranging from current web standards and best practices to anecdotes about landing a first gig.  Anyone even mildly interested in tech is encouraged to follow and comment!  Many developer blogs feature useful posts that include tips, tricks, and techniques for incorporating cool effects into websites using a bit of clever CSS and JavaScript in tandem.  One of my first goals will be to point users towards these resources and create an archive.
 					</p>
+
+					<h3>Adding Articles -- June 10, 2016</h3>
+					<p>Eventually, I'll have an organized method of adding articles to this page without directly altering the structure of the html.  Until then, I'll be updating the html directly.  This begs the question:  How do bloggers (that code their own websites) typically organize the articles that they add?  These articles usually have their own IDs corresponding to a particular entry or page.  Consider this the next topic of my research!</p>
 
 					<h3>Why all the hype?</h3>
 					<p>This page is helping me develop my skills on the front and back end of web development.  Before it goes live, we'll make sure that the layout, form submission, and interface is exactly as we've envisioned it.  The three major hurdles to having an impressive live page are:
@@ -71,10 +74,22 @@
 					<p>As we are in our developing phases, feel free to take a look at the source code with the editor of your choice and make recommendations!  Most of the styling and layout for this page is not yet set in stone, so take the opportunity to leave your mark on this page.</p>
 					
 				</div>
-				<div class="col-sm-2" id="poll">
+				<div class="col-sm-3" id="poll">
 					<h3>Weekly Poll:</h3>
 					<p>What CSS positioning concept do you think is generally least well understood?</p>
-				</div>
+					<form>
+					Relative:
+					<input type="radio" name="vote" value="0" onclick="">
+					<br>Absolute:
+					<input type="radio" name="vote" value="1" onclick="">
+					<br>Fixed:
+					<input type="radio" name="vote" value="2" onclick="">
+					<br>Static:
+					<input type="radio" name="vote" value="3" onclick="">
+					<br>
+					<button type="submit" class="btn btn-default">Vote</button><br>
+					</form>
+				</div>	
 			</div>
 			<div class="row tools">
 				<div class="col-sm-8 col-sm-offset-1">
@@ -84,20 +99,21 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-4 col-sm-offset-1 addContent">
-					<form method='post'>
-  						Name: <input type='text' name='name' id='name' /><br />
-
-  						Email: <input type='text' name='email' id='email' /><br />
-
-  						Website: <input type='text' name='website' id='website' /><br />
-
-  						Comment:<br />
-  						<textarea name='comment' id='comment' rows="4" cols="30"></textarea><br />
-
-  						<input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
-
-  						<input type='submit' value='Submit' />  
+				<div class="col-sm-4 addContent">
+					<form>
+						  <fieldset class="form-group">
+						    <label for="exampleInputEmail1">Name</label>
+						    <input type="email" class="form-control" id="inputName" placeholder="Enter name">
+						  </fieldset>
+						  <fieldset class="form-group">
+						    <label for="exampleInputPassword1">E-mail</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
+						  </fieldset>
+						  <fieldset class="form-group">
+						    <label for="comment">Comment</label>
+						    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+						  </fieldset>
+						  <button type="submit" class="btn btn-primary">Submit</button>
 					</form>
 				</div>
 			</div>
