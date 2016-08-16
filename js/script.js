@@ -25,6 +25,7 @@
 			    var scroll = $(window).scrollTop();
 			    //console.log(scroll);  // <--- Useful for debugging the scroll-dependent menu-fixing 
 			    if (scroll >= 99) {
+			    	console.log(model.taskbar);
 			        model.taskbar.addClass("taskbar-scroll");
 			        model.phantom.css({position: "relative"});
 			    } else {
