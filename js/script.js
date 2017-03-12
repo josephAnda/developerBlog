@@ -1,26 +1,20 @@
 
 
-//  [  ]  Implement function to automatically add code for taskbar 
-//  [!!]  Make sure feautures don't break if screen is resized.
-//  	[!!]  Make menu mobile-friendly	(via bootstrap)
-//      [  ]  Change the threshold scroll value for different viewport sizes (if necessary)
-//  [!!]  Refactor with MVC paradigm  
+//  [!!]  Stylistically implement separation of pillboxes/stories 
 //  [  ]  Add story and comment adding features
 //  [  ]  Add date & name features for adding stories and comments 
 //  [  ]  Create picture background
 //  [  ]  Design banner
-//  [!!]  Create functional menu items 
-//		[!!]  Create fixed position menu 
-//  [!!]  Make the layout colored and semi-finalized 
-//  [!!]  Host different pages by either (1)  Changing HTML or (2) Actually changing page 
+//  [!!]  Research frameworks to see if there's a useful one to implement here (Try MEAN Stack, Firebase, etc.)
+
+
 (function() {
 	"use strict";
 
 	var model = {
-		//taskbar: $('#taskbar'), //  <--- Deprecated.  Because the html that creates this element is inserted dynamically,
-		//  This reference fails to correctly describe the element in the scroll function that is called below
-		phantom: $('#phantom'),  // <---This is to keep the non-taskbar content from re-flowing once the taskbar locks via position: fixed
 		
+		phantom: $('#phantom'),  // <---This is to keep the non-taskbar content from re-flowing once the taskbar locks via position: fixed
+		//  Note the escape characters used below.  Recall that in a string a new line is otherwise registered differently
 		navbarHTML: "<div><h1 id='banner'>(BANNER GOES HERE)</h1></div> \
 		<nav class='navbar navbar-default' role='navigation' id='taskbar'> \
   			<div class='navbar-header'> \
@@ -63,7 +57,7 @@
 			$(window).scroll(function() {    
 
 			    var scroll = $(window).scrollTop();
-			    console.log(scroll);  // <--- Useful for debugging the scroll-dependent menu-fixing 
+			    console.log(scroll);  
 			    
 			    if (scroll >= 99) {
 			        taskbar.addClass("taskbar-scroll");  //  Fixes taskbar but removes it from the flow of the document

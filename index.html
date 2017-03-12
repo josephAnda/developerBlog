@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html ng-app="devBlog" lang="en">
 	<head>
 		<title>Joseph Anda's Developer Blog</title>
   		<meta charset="utf-8">
@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -19,9 +21,22 @@
 		<div class="container">
 			<div class="row main">
 				<div class="col-sm-8">
-					<h1>Adding Article Snippets -- August 15, 2016</h1>
+					<h1>Front-End Developer Digest</h1>
+					<p>This is a page where developers can express their thoughts or ideas about various topics ranging from current web standards and best practices to anecdotes about landing a first gig.  Anyone even mildly interested in tech is encouraged to follow and comment!  Many developer blogs feature useful posts that include tips, tricks, and techniques for incorporating cool effects into websites using a bit of clever CSS and JavaScript in tandem.  One of my first goals will be to point users towards these resources and create an archive.
+					</p>
+				</div>
+				
+				<div class="col-sm-8">
+					<h1>Making components modular <br /><span class='date'>December 22, 2016<span></h1>
+					<p>Hello faithful followers!  We all know that in development of all sorts, modularity is often favored.  The reasons for this are clear:  Once a project becomes very large, it becomes tedious to rehash the exact same format for certain components that have already been created.  It is preferred to have a method more sophisticated than copy-paste that allows us to effortlessly control all components that are in a similar category.  For that reason, in this edition we will focus on the various approaches developers take to making components (of web applications in particular) more modular.  Read on for a list of current techniques, and please feel free to comment or make any suggestions of any components that you think are missing. 
+					</p>
+					<a>Read more . . . </a>
+				</div>
+				<div class="col-sm-8">
+					<h1>Adding Article Snippets <br /><span class='date'>August 15, 2016<span></h1>
 					<p>One feature that I've noticed is worth adding in many blogs is the separation of article content.  Visually, the inclusion of snippets of larger pieces of work can be accomplished by separating the content into their own blocks.  A url to an index including the full article can be included at the bottom of each snippet to enhance the readability of the main page without compromising the accessibility of the details displayed.
 					</p>
+					<a>Read more . . . </a>
 				</div>
 				<div class="col-sm-3" id="poll">
 					<h3>Weekly Poll:</h3>
@@ -42,11 +57,7 @@
 			</div>
 			<div class="row main">
 				<div class="col-sm-8">
-					<h1>Front-End Developer Digest</h1>
-					<p>This is a page where developers can express their thoughts or ideas about various topics ranging from current web standards and best practices to anecdotes about landing a first gig.  Anyone even mildly interested in tech is encouraged to follow and comment!  Many developer blogs feature useful posts that include tips, tricks, and techniques for incorporating cool effects into websites using a bit of clever CSS and JavaScript in tandem.  One of my first goals will be to point users towards these resources and create an archive.
-					</p>
-
-					<h3>Adding Articles -- June 10, 2016</h3>
+					<h1>Adding Articles <br /><span class='date'>June 10, 2016</span></h1>
 					<p>Eventually, I'll have an organized method of adding articles to this page without directly altering the structure of the html.  Until then, I'll be updating the html directly.  This begs the question:  How do bloggers (that code their own websites) typically organize the articles that they add?  These articles usually have their own IDs corresponding to a particular entry or page.  Consider this the next topic of my research!</p>
 
 					<h3>Why all the hype?</h3>
@@ -63,13 +74,13 @@
 				</div>
 				
 			</div>
-			<div class="row tools">
+			<!--div class="row tools">
 				<div class="col-sm-8 col-sm-offset-1">
 					<button type="button" class="btn btn-default" aria-label="Comment">
 	 					<span class="glyphicon glyphicon-pencil" title="Write Comment" aria-hidden="true"></span>
 					</button>
 				</div>
-			</div>
+			</div-->
 			<div class="row">
 				<div class="col-sm-4 addContent">
 					<form>
